@@ -1,0 +1,46 @@
+Actividad Mochila Viajero - Comando Git - GitHub
+$ git init   --> Inicializar el proyecto
+
+--> la primera vez que se usa git es importante configurar el usuario y el mail
+$ git config --global user.name  "usuario_github"
+$ git config --global user.email  "mail"
+$ git config -l --> se puede verificar la configuración de todo
+git config user.name --> se puede verificar la configuración solo de lo indicado
+
+$ touch nombre_archivo  --> Crear archivos (quedan untracked)
+$ git add nombre_archivo --> para pasar a la staging area (a la primera versión)
+$ git add .  --> tambien se puede usar este comando, donde toma todos los archivos
+$ git commit -m "mensaje"  --> para realizar el primer commit
+
+$ git remote add origin "nombre del repositorio"  --> para vincular con el repositorio remoto
+$ git remote -v    --> para verificar si quedo bien
+$ git push origin main (o master)  --> subir los cambios al repositorio y actualizarlo
+
+--> una buena práctica para evitar conflicto es hacer un pull 
+
+$ git clone "nombre repositorio remoto"  --> para clonar un repositorio existente en GitHub
+$ git pull origin main (o master) --> se bajan cambios del repositorio remoto al local
+
+$git log --oneline   --> para ver los commit 
+$ git branch -M master main  --> para cambiar eel nombre de la rama principal de master a main
+
+--> Ramas, es un espacio alternativo de trabajo para no tocar la principla
+--> hace una copia de como esta la principal en ese moemnto y se pueden 
+--> hacer cambios en la rama
+
+$ git branch nombre_rama   --> crear nueva rama
+$ git branch  --> para consultar las ramas que se tienen
+$ git checkout nombre_rama   --> para cambiar de rama
+
+$ touch nombre_archivo  --> Crear archivos (quedan untracked)
+$ git add nombre_archivo --> para pasar a la staging alternativo
+$ git add .  --> tambien se puede usar este comando, donde toma todos los archivos
+$ git commit -m "mensaje"  --> para realizar commit
+$ git push origin nombre_rama  --> para subir los cambios a la rama
+
+--> Para fucionar cambios con la rama principal se debe hacer el merge
+--> hay que ubicarse en la rama que no esta actualizada (main o master)
+
+$ git checkout nombre_rama   --> para cambiar de rama
+$ git merge nombre_rama    --> nombre de la rama a traer al main o master
+$ git push origin main (o master)  --> subir los cambios al repositorio y actualizarl
