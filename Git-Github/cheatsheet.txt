@@ -22,7 +22,7 @@ $ git clone "nombre repositorio remoto"  --> para clonar un repositorio existent
 $ git pull origin main (o master) --> se bajan cambios del repositorio remoto al local
 
 $git log --oneline   --> para ver los commit 
-$ git branch -M master main  --> para cambiar eel nombre de la rama principal de master a main
+$ git branch -M main (o master)  --> para cambiar eel nombre de la rama principal de master a main
 
 --> Ramas, es un espacio alternativo de trabajo para no tocar la principla
 --> hace una copia de como esta la principal en ese moemnto y se pueden 
